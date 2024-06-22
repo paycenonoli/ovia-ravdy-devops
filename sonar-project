@@ -1,0 +1,8 @@
+sonar.verbose=true
+sonar.organization=ovia-org01
+sonar.projectKey=ovia-org01_ovia-ravdy-devops
+sonar.projectName=ova-ravdy-devopssonar.language=java
+sonar.sourceEncoding=UTF-8
+sonar.sources=.
+sonar-java-binaries=target/classes
+sonar.covearge.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
