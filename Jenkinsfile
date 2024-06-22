@@ -13,6 +13,13 @@ pipeline{
                 sh 'mvn clean deploy'
             }
         }
+
+        stage('Unit Test'){
+            steps{
+                echo "------- Unit Test"
+                sh 'mvn surefire-report:report'
+            }
+        }
         stage('SonarQube analysis') {
         environment { 
             scannerHome = tool 'ovia-sonar-scanner'
